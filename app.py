@@ -6,7 +6,7 @@ from transformers.pipelines import TextGenerationPipeline
 class TextGenerator:
     def __init__(self):
         self.generator: TextGenerationPipeline
-        self.max_length = 100
+        self.max_length = 300
         set_seed(1)
 
     def load_generator(self) -> None:
